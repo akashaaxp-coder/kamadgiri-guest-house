@@ -1,0 +1,700 @@
+/* ==============================
+   KAMADGIRI GUEST HOUSE
+   MODERN WEBSITE CSS
+================================ */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f8f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    background: #111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 7%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #d4af37;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.58)
+        ),
+        url("images/hall.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    padding: 80px 7%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.welcome {
+    color: #d4af37;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 18px;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #d4af37;
+    color: #111;
+}
+
+.primary-btn:hover {
+    background: white;
+}
+
+.secondary-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #111;
+}
+
+
+/* ---------- GENERAL SECTION ---------- */
+
+section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #b08a1b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    background: white;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-content h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-box {
+    background: #111;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.about-box h3 {
+    color: #d4af37;
+}
+
+
+/* ---------- ROOMS ---------- */
+
+.rooms-section {
+    background: #f5f5f5;
+}
+
+.room-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.room-content {
+    padding: 25px;
+}
+
+.room-content h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.room-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #b08a1b;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #777;
+    font-weight: normal;
+}
+
+.card-btn {
+    display: inline-block;
+    background: #111;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+
+/* ---------- SERVICES ---------- */
+
+.services-section {
+    background: white;
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 30px 20px;
+
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #777;
+}
+
+
+/* ---------- REVIEWS ---------- */
+
+.reviews-section {
+    background: #f5f5f5;
+}
+
+.reviews-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stars {
+    color: #d4af37;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.review-card h4 {
+    color: #111;
+}
+
+
+/* ---------- BOOKING ---------- */
+
+.booking-section {
+    background: #111;
+    color: white;
+}
+
+.booking-section .section-title h2 {
+    color: white;
+}
+
+.booking-form {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    background: white;
+    color: #111;
+
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d4af37;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.booking-btn {
+    grid-column: 1 / -1;
+
+    padding: 14px;
+
+    background: #d4af37;
+    color: #111;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.booking-btn:hover {
+    background: #111;
+    color: white;
+}
+
+
+/* ---------- MAP ---------- */
+
+.map-section {
+    background: white;
+    text-align: center;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: auto;
+
+    background: #f5f5f5;
+    padding: 45px 20px;
+
+    border-radius: 12px;
+}
+
+.map-link {
+    display: inline-block;
+
+    background: #111;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.map-link:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-section {
+    background: #f5f5f5;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background: white;
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    color: #b08a1b;
+    font-weight: bold;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.footer-content h2 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #aaa;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* ---------- WHATSAPP ---------- */
+
+.whatsapp-float {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    background: #25d366;
+    color: white;
+
+    padding: 13px 18px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+    z-index: 999;
+
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .booking-btn {
+        grid-column: auto;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 180px;
+        text-align: center;
+    }
+
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+    }
+}
