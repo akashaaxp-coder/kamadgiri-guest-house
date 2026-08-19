@@ -111,7 +111,7 @@
 
             <div class="room-card">
 
-                <img src="images/room1.jpg" alt="Deluxe Room">
+                <img src="room1.jpg" alt="Deluxe Room">
 
                 <div class="room-content">
 
@@ -137,7 +137,7 @@
 
             <div class="room-card">
 
-                <img src="images/room2.jpg" alt="Family Room">
+                <img src="room2.jpg" alt="Family Room">
 
                 <div class="room-content">
 
@@ -163,7 +163,7 @@
 
             <div class="room-card">
 
-                <img src="images/hall.jpg" alt="Wedding Hall">
+                <img src="hall.jpg" alt="Wedding Hall">
 
                 <div class="room-content">
 
